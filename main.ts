@@ -17,3 +17,4 @@ let mySprite = sprites.create(img`
 . . . . . . . 8 8 f 8 8 . . . . . . . 
 `, SpriteKind.Player)
 scene.setBackgroundColor(11)
+mySprite.say("eh")
