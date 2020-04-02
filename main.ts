@@ -1,3 +1,22 @@
+let mySprite3 = sprites.create(img`
+. . . . . . . . . . . . . . . . . . 
+. . . 3 . . . . . . . . . . . 3 . . 
+. . 3 3 3 . 3 3 3 3 3 3 3 . 3 3 3 . 
+. 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+. 3 . 3 3 3 3 3 3 3 3 3 3 3 3 3 . 3 
+. 3 . 3 3 3 3 3 3 3 3 3 3 3 3 3 . 3 
+. 3 . 3 3 3 3 3 3 3 3 3 3 3 3 3 . 3 
+. . . 3 3 3 1 1 1 3 1 1 1 3 3 3 . . 
+. . . 3 3 3 1 8 1 3 1 8 1 3 3 3 . . 
+. . . 3 3 3 1 1 1 3 1 1 1 3 3 3 . . 
+. . . 3 3 3 3 3 3 3 3 3 3 3 3 3 . . 
+. . . 3 3 3 3 3 f 3 f 3 3 3 3 3 . . 
+. . . . 3 3 3 3 3 3 3 3 3 3 3 . . . 
+. . . . . 3 3 3 3 3 3 3 3 3 . . . . 
+. . . . . . 3 3 3 3 3 3 3 . . . . . 
+. . . . . . . . . . . . . . . . . . 
+`, SpriteKind.Player)
+mySprite3.setPosition(55, 60)
 let mySprite = sprites.create(img`
 . . . . . . . . . . . . . . . . . . . 
 . . . . f f f f f f f f f f f . . . . 
@@ -38,4 +57,6 @@ let mySprite2 = sprites.create(img`
 `, SpriteKind.Player)
 mySprite2.setPosition(100, 60)
 pause(2000)
-mySprite2.say("hello")
+mySprite2.say("hello", 2000)
+pause(2000)
+mySprite3.say("oink", 2000)
